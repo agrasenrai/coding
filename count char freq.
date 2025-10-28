@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    map<char, int> mpp;
+    string s;
+    for(int i = 0; i<s.size(); i++){
+        mpp[s[i]]++;
+    }
+    for(auto it: mpp){
+        cout<<"char: "<<it.first<<" frq: "<< it.second;
+    }
+    return 0;
+}
